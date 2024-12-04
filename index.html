@@ -3,59 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Multiservicio de la Sabana</title>
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #219b9b;
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #026767;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffea00;
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffea00;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .services {
+            background-color: #027a7a;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .services h2 {
+            text-align: center;
+            color: #ffea00;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ffea00;
+            color: #026767;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #ffc107;
+        }
+
+        footer {
+            background-color: #026767;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        footer .social-icons a {
+            color: #ffffff;
+            font-size: 1.5em;
+            margin: 0 10px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer .social-icons a:hover {
+            color: #ffea00;
+        }
+
+        footer p {
+            color: #ffffff;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
-<body style="background-color: rgb(33, 155, 155);">
-    <h1 style="color: rgb(60, 0, 255);background-color: greenyellow; text-align: center;"> Multiservicio de la sabana</h1>
-    <h3 style="color: #ffea00; text-align:justify;">
-        En Multicomputo, entendemos lo importante que es tu computadora para tus actividades diarias, ya sea para el trabajo, 
-        los estudios o el entretenimiento. Por eso, ofrecemos un servicio profesional de reparación y 
-        mantenimiento de computadoras a domicilio, diseñado para brindarte comodidad, rapidez y calidad sin que tengas
-         que moverte de tu hogar u oficina.</h3>
+<body>
+    <header>
+        <h1>Multiservicio de la Sabana</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
 
-         <div style= "text-align: center;">
-               <img src="goku.jpg.jpg"  alt="Servicio de reparación de computadoras" style="width: 300px;height: 200px; object-fit: cover; border: 2px solid #ffea00;"> 
-               <img src="pc1.jpg"  alt="Servicio de reparación de computadoras" style="width: 300px;height: 200px; object-fit: cover; border: 2px solid #26df4eb6;">    
+    <div class="content">
+        <h3>
+            En Multicomputo, entendemos lo importante que es tu computadora para tus actividades diarias, ya sea para el trabajo, 
+            los estudios o el entretenimiento. Por eso, ofrecemos un servicio profesional de reparación y mantenimiento de computadoras 
+            a domicilio, diseñado para brindarte comodidad, rapidez y calidad sin que tengas que moverte de tu hogar u oficina.
+        </h3>
 
+        <div class="image-container">
+            <img src="reparacion.jpg" alt="Servicio de reparación de computadoras">
+            <img src="pc1.jpg" alt="Servicio de reparación de computadoras">
+        </div>
 
-         </div>
+        <div class="services">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li><b>Diagnóstico y Reparación:</b> Solución de problemas de hardware y software, reemplazo de piezas dañadas, reparación de pantallas.</li>
+                <li><b>Mantenimiento Preventivo y Correctivo:</b> Limpieza interna y externa, optimización del sistema, actualización de drivers.</li>
+                <li><b>Instalaciones y Configuraciones:</b> Instalación de sistemas operativos, configuración de redes, software y antivirus.</li>
+                <li><b>Recuperación de Datos:</b> Recuperación de información desde discos dañados y copias de seguridad.</li>
+            </ul>
+            <a href="#" class="btn">¡Solicita tu servicio hoy mismo!</a>
+        </div>
+    </div>
 
-        Nuestros Servicios
-        Diagnóstico y Reparación:
-        
-        Solución de problemas de hardware y software.
-        Reemplazo de piezas dañadas (discos duros, memorias RAM, tarjetas madre, entre otros).
-        Reparación de pantallas y componentes electrónicos.
-        Mantenimiento Preventivo y Correctivo:
-        
-        <h4> Limpieza interna y externa del equipo.
-        Optimización del rendimiento del sistema operativo.
-        Actualización de drivers y programas esenciales.
-        Instalaciones y Configuraciones:</h4>
-        
-        <h4>Instalación de sistemas operativos (Windows, macOS, Linux).
-        Configuración de redes domésticas y empresariales.
-        Instalación de software especializado y antivirus.
-        Recuperación de Datos:</h4>
-        
-        Recuperación de información desde discos duros dañados o formateados.
-        Copias de seguridad y protección de datos importantes.
-        Ventajas de Nuestro Servicio a Domicilio
-        Comodidad: No necesitas trasladar tu equipo; nosotros vamos hasta ti.
-        Atención Rápida: Ofrecemos un tiempo de respuesta adaptado a tus necesidades.
-        Servicio Personalizado: Cada caso es único y se aborda con soluciones específicas.
-        Garantía de Calidad: Trabajamos con técnicos certificados y herramientas de última generación.
-        ¿Cómo Funciona?
-        Contáctanos a través de nuestro formulario en línea, WhatsApp o por teléfono.
-        Describe el problema que presenta tu computadora.
-        Agendamos una visita según tu disponibilidad.
-        Uno de nuestros técnicos acudirá a tu domicilio para solucionar el inconveniente.
-        Cobertura
-        Prestamos servicio en [indica las zonas o ciudades donde operas]. Si estás fuera de nuestra área, contáctanos y buscaremos una solución.
-        
-        En Multicomputo, tu satisfacción es nuestra prioridad. Confía en nosotros para mantener tu equipo en las mejores condiciones y garantizar un rendimiento óptimo en todo momento.
-        
-        ¡Solicita tu servicio hoy mismo y deja tu computadora en manos de expertos! 
-
+    <footer>
+        <div class="social-icons">
+            <a href="mailto:contacto@multiservicio.com" title="Enviar un correo"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/1234567890" target="_blank" title="Contáctanos por WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+1234567890" title="Llámanos"><i class="fas fa-phone-alt"></i></a>
+        </div>
+        <p>&copy; 2024 Multiservicio de la Sabana. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
